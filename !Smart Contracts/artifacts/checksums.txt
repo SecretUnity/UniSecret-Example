@@ -1,0 +1,1 @@
+a512a738d71159d42d724fef44a0943c188ef324219ec6d07ed875a851ed0ba1  cards_manager.wasm

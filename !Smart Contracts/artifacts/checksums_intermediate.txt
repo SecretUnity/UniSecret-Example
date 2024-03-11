@@ -1,0 +1,1 @@
+1f6b7859b29c130cff514118f4b3b16e8c347e8b47debf8d400f38e509e1c62b  target/wasm32-unknown-unknown/release/cards_manager.wasm

@@ -1,0 +1,26 @@
+[network]
+profile = 'scrt'
+chain_id = 'pulsar-3'
+rpc_url = 'https://rpc.pulsar-3.secretsaturn.net'
+denom = 'uscrt'
+gas_prices = '0.0125uscrt'
+
+[tooling]
+optimizer_backend = 'default'
+
+[tests]
+node_setup_time = 8
+test_container_name = 'warp-dev-cards-project'
+persist_image = false
+
+[autodeploy]
+account_id = 'dev'
+make_labels_unique = true
+
+[[autodeploy.steps]]
+id = '_cards_manager'
+contract = 'artifacts/cards_manager.wasm'
+label = 'cards_manager'
+store_only = false
+migrate_msg = '{}'
+init_msg = '{ "owner": "$account_id", "message": "" }'
